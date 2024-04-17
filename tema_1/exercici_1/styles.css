@@ -49,7 +49,7 @@ header{
 .banner{
     background-color: #ff8b00;
     margin-top: 1em;
-    width: 100%;
+    padding: 1em;
 }
 .banner h3{
     padding: 1em;
