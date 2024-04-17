@@ -48,12 +48,16 @@ header{
 
 .banner{
     background-color: #ff8b00;
-    padding: 1em;
     margin-top: 1em;
+    width: 100%;
 }
-.banner a{
+.banner h3{
+    padding: 1em;
     background-color: #fed700;
+}
+.banner h3 a{
     text-align: center;
+    
 }
 .content-article{
     margin-top: 1em;
@@ -81,6 +85,8 @@ article{
 .navegacion{
     background-color: #71a3c4;
     padding: 1em;
+    width: 95%;
+    margin: auto;
 }
 aside{
     width: 25%;
