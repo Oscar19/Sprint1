@@ -1,0 +1,39 @@
+a{
+    color: #000;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.content{
+    width: 100%;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #000;
+}
+.logo, .nav, .social{
+    padding: 0.5em 2em;
+}
+.logo, .social{
+    width: 20%;
+}
+.nav{
+    width: 60%;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav ul li{
+    justify-content: space-around;
+    
+}
+.social ul{
+    display: flex;
+    justify-content: space-around;
+}
+
