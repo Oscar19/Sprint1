@@ -6,7 +6,11 @@ a{
     color: #000;
     text-decoration: none;
 }
-
+a:hover{
+    color: darksalmon;
+    animation-name: hover1;
+    animation-duration: 2s;
+}
 ul li{
     list-style: none;
 }
@@ -20,29 +24,25 @@ header{
     background-size: cover;
     background-position: center;
 }
-
-.nav, nav ul, .social ul{
+.nav{
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+}
+nav ul{
     display: flex;
     justify-content: space-between;
 
 }
-nav ul li a:hover{
-    color: darksalmon;
-    animation-name: hover1;
-    animation-duration: 2s;
+.social ul{
+    display: flex;
+    justify-content: end;
 }
-.logo{
-    width: 15%;
-}
+
+
 .logo img{
     width:100px;
 }
-nav{
-    width: 60%;
-}
-.social{
-    width: 10%;
-}
+
 .content-header{
     position: absolute;
     bottom: 1px;
@@ -59,35 +59,33 @@ nav{
 }
 .content{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
 }
 .articles, .aside{
     margin: 0.5em;
     padding: 1em;;
 }
 .articles{
-    width: 75%;
-    display: flex;
-    flex-wrap: wrap; 
-    align-content: flex-start;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: #d8d7d7;
     
 }
 .aside{
-    width: 25%;
+   
     background-color: #d8d7d7;
 
 }
 article{
-    width: 45%;
     margin: 0.5em;
     background-color: #fff;
 }
 
 article .image{
     position: relative;
-    max-height: 250px;
+    
 }
 article .image img{
     width: 100%;
@@ -105,7 +103,7 @@ article .title{
 }
 article .image .fecha{
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     left: 10px;
     color: yellow;
 }
@@ -120,20 +118,31 @@ article .image .fecha{
     
 }
 @media (max-width: 767px){
-    
-    article{
-        width: 100%;
+    .logo{
+        text-align: center;
     }
+    .nav{
+        position: relative;
+        z-index: 999;
+    }
+    .content, .articles, .nav{
+        grid-template-columns: 1fr;
+    }
+    
     article .title{
         padding: 5px 0;
         text-align: center;
     }
-    .articles, .aside,.nav, nav ul, .content{
-        width: 100%;
+    
+    nav ul {
         flex-direction: column;
     }
     nav ul li{
         border-bottom: 1px solid;
         margin-bottom: 10px;
     }
+    .social ul{
+        justify-content: start;
+    }
+    
 }

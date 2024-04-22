@@ -6,7 +6,11 @@ a{
     color: #000;
     text-decoration: none;
 }
-
+a:hover{
+    color: darksalmon;
+    animation-name: hover1;
+    animation-duration: 2s;
+}
 ul li{
     list-style: none;
 }
@@ -26,11 +30,7 @@ header{
     justify-content: space-between;
 
 }
-nav ul li a:hover{
-    color: darksalmon;
-    animation-name: hover1;
-    animation-duration: 2s;
-}
+
 .logo{
     width: 15%;
 }
