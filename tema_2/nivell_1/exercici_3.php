@@ -61,10 +61,10 @@ echo "<br><br>";
         <option value="multiplicar">Multiplicar</option>
         <option value="dividir">Dividir</option>
     </select>
-    <input type="submit" />
+    <input type="submit" name="envia" />
 </form>
 <?php
-
+if(isset($_POST["envia"])){
 $num1 = $_POST["numero1"];
 $num2 = $_POST["numero2"];
 $opera = $_POST["operacion"];
@@ -89,6 +89,6 @@ function calcular($num, $num2, $opera){
 }
 $calculo = calcular($num1, $num2, $opera);
 echo "El resultado es: ". $calculo;
-
+}
 
 ?>
