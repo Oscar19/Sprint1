@@ -14,24 +14,26 @@
   
    if(isset($_POST["envia"])){
 
-        function mirar_Caracteres($array, $caracter) {
-
-            foreach ($array as $palabra) {
-
-                if (strpos($palabra, $caracter) === false) {
-                    
-                    return false;
-                }
-            }
-            
-            return true;
-        }
+        
         
     
         $arrayDePalabras = ["Oscar", "Sacapuntas", "Lapices"];
         
         
         $caracter = $_POST["letra"];
+
+        function mirar_Caracteres($array, $caracter) {
+            
+            foreach ($array as $palabra) {
+                $resultado = strpos($palabra, $caracter);
+                if($resultado === false){
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        }
         
         if (mirar_Caracteres($arrayDePalabras, $caracter)) {
             echo "Todas las palabras contienen el carácter '$caracter'.";
@@ -41,5 +43,6 @@
         
     }
    ?> 
+  
 </body>
 </html>
