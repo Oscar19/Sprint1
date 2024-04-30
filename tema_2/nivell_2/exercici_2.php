@@ -48,7 +48,7 @@
             return $total;
         }
 
-        echo "Chocolate: " . $chocolate . " x " . $precio_chocolate . "€<br>";
+        echo "<br><br>Chocolate: " . $chocolate . " x " . $precio_chocolate . "€<br>";
         echo "Chicles: " . $chicles . " x " . $precio_chicles . "€<br>";
         echo "Caramelos: " . $caramelos . " x " . $precio_caramelos . "€<br>";
         echo "Total: " . calcular_total($chocolate, $chicles, $caramelos) . "€<br>";
