@@ -26,7 +26,7 @@
             
             foreach ($array as $palabra) {
                 $resultado = strpos($palabra, $caracter);
-                if($resultado === false){
+                if(!$resultado){
                     return false;
                 }
                 else{
