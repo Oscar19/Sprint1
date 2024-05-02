@@ -12,7 +12,7 @@
                 echo $this->nombre . " tiene que pagar impuestos<br><br>";
             }
             else{
-                echo $this->nombre . " No tiene que pagar impuestos<br><br>";
+                echo $this->nombre . " No tiene que pagar impuestos<br>";
             }
         }
     }

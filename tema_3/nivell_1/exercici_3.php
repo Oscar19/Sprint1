@@ -14,19 +14,16 @@
   
    if(isset($_POST["envia"])){
 
-        
-        
-    
         $arrayDePalabras = ["Oscar", "Sacapuntas", "Lapices"];
         
         
         $caracter = $_POST["letra"];
 
-        function mirar_Caracteres($array, $caracter) {
+        function mirar_Caracteres($arrayDePalabras, $caracter) {
             
-            foreach ($array as $palabra) {
+            foreach ($arrayDePalabras as $palabra) {
                 $resultado = strpos($palabra, $caracter);
-                if(!$resultado){
+                if($resultado === false){
                     return false;
                 }
                 else{
