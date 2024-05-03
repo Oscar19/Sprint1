@@ -31,7 +31,6 @@
                 }
             }
         }
-        
         if (mirar_Caracteres($arrayDePalabras, $caracter)) {
             echo "Todas las palabras contienen el carácter '$caracter'.";
         } else {

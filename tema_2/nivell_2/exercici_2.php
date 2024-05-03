@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercici 2</title>
-</head>
-<body>
-    <h1>Que quieres comprar?</h1>
-   
-    <form action="" method="post">
-        <input type="number" name="chocolate" placeholder="Chocolate"><br><br>
-        <input type="number" name="chicles" placeholder="Chicles"><br><br>
-        <input type="number" name="caramelos" placeholder="Caramelos"><br><br>
-        <input type="submit" name="envia" value="Precio de la compra" />
-    </form>
+  <?php
 
-    <?php
-    if(isset($_POST["envia"])){
-        $chocolate = isset($_POST["chocolate"]) ? $_POST["chocolate"] : 0;
-        $chicles = isset($_POST["chicles"]) ? $_POST["chicles"] : 0;
-        $caramelos = isset($_POST["caramelos"]) ? $_POST["caramelos"] : 0;
+    /*$chocolate = 0;
+    $chicles = 0;
+    $caramelos = 0;*/
+
+  
+   $chocolate = readline("Cantidad de chocolate: ");
+    echo ($chocolate. "\n");
+    echo "Cantidad de chicles:";
+    $chicles = readline();
+
+    echo "Cantidad de caramelos:";
+    $caramelos = readline();
+
 
         function chocolate($cantidad){
             $precio = 1;
@@ -52,8 +45,5 @@
         echo "Chicles: " . $chicles . " x " . $precio_chicles . "€<br>";
         echo "Caramelos: " . $caramelos . " x " . $precio_caramelos . "€<br>";
         echo "Total: " . calcular_total($chocolate, $chicles, $caramelos) . "€<br>";
-    }
+    
     ?>
-
-</body>
-</html>
