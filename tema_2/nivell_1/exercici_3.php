@@ -8,87 +8,85 @@ $y = 7;
 $n = 5.5;
 $m = 8.2;
 echo "La variable x es ". $x . ", la variable y es ". $y;
-echo "<br><br>";
+echo "\n";
 
 $suma = $x + $y;
 $resta = $x - $y;
 $multiplicacion = $x * $y;
 $modulo = $x & $y;
 
-echo "<br><br>";
+echo "\n";
 echo "La suma de " . $x . " + " . $y ." = ". $suma;
-echo "<br><br>";
+echo "\n";
 echo "La resta de " . $x . " - " . $y ." = ". $resta;
-echo "<br><br>";
+echo "\n";
 echo "El producto de " . $x . " * " . $y ." = ". $multiplicacion;
-echo "<br><br>";
+echo "\n";
 echo "El módulo de " . $x . " y " . $y ." = ". $modulo;
-echo "<br><br>";
+echo "\n";
 echo "La variable n es ". $n . ", la variable m es ". $m;
-echo "<br><br>";
-echo "<br><br>";
+echo "\n";
+echo "\n";
 echo "La suma de " . $n . " + " . $m ." = ". $n + $m;
-echo "<br><br>";
+echo "\n";
 echo "La resta de " . $n . " - " . $m ." = ". $n - $m;
-echo "<br><br>";
+echo "\n";
 echo "El producto de " . $n . " * " . $m ." = ". $n * $m;
-echo "<br><br>";
+echo "\n";
 echo "El módulo de " . $n . " y " . $m ." = ". $n % $m;
-echo "<br><br>";
-echo "<br><br>";
+echo "\n";
+echo "\n";
 echo "la suma de todas las variables es ". $x + $y + $n + $m;
-echo "<br><br>";
+echo "\n";
 echo "Dobles de las variables";
-echo "<br><br>";
+echo "\n";
 echo $x * 2 .", ". $y * 2 . ", ". $n * 2 . ", ". $m * 2;
-echo "<br><br>";
+echo "\n";
 echo "La suma de todas la variables es: ". $x + $y + $n + $m;
-echo "<br><br>";
+echo "\n";
 echo "El producto de todas la variables es: ". $x * $y * $n * $m;
-echo "<br><br>";
-echo "<h4>Ejercicio 3 B</h4>";
-echo "<br><br>";
-echo "<br><br>";
+echo "\n";
+echo "<h4>Ejercicio 3 B</h4>\n";
+echo "\n";
+echo "\n";
 
-?>
-<form action="" method="post">
-    <input type="number" name="numero1" id="" placeholder="Introduce el primer número">
-    <input type="number" name="numero2" id="" placeholder="Introduce el segundo número">
-    <select name="operacion" id="">
-    <option value="">Que quieres hacer?</option>
-        <option value="sumar">Sumar</option>
-        <option value="restar">Restar</option>
-        <option value="multiplicar">Multiplicar</option>
-        <option value="dividir">Dividir</option>
-    </select>
-    <input type="submit" name="envia" />
-</form>
-<?php
-if(isset($_POST["envia"])){
-$num1 = $_POST["numero1"];
-$num2 = $_POST["numero2"];
-$opera = $_POST["operacion"];
+
+
+$num1 = readline("Escribe el primer numero: ");
+$num2 = readline("Escribe el segundo numero: ");
+
+echo "Menú\n";
+echo "*****\n";
+echo "1. Sumar \n";
+echo "2. Restar \n";
+echo "3. Multiplicar \n";
+echo "4. Dividir \n";
+$opera = readline("que quieres hacer? (Escribe el número): \n");
+echo "*****\n";
+
+
+
 
 //echo gettype($opera);
-function calcular($num, $num2, $opera){
+function calcular($num1, $num2, $opera){
     switch($opera){
-        case "sumar": 
+        case 1: 
             $resultado = $num1 + $num2;
         break;
-        case "restar":
+        case 2:
             $resultado = $num1 - $num2;
         break;
-        case "multiplicar" :
+        case 3 :
             $resultado = $num1 * $num2;
         break;
-        case "dividir" :
+        case 4:
             $resultado = $num1 / $num2;
         break;
     }
     return $resultado;
 }
 $calculo = calcular($num1, $num2, $opera);
-echo "El resultado es: ". $calculo;
-}
+echo "El resultado es: ". $calculo ." \n";
 
-?>
+
+
