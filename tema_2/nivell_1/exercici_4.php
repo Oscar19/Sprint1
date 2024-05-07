@@ -5,8 +5,9 @@
         $comptar = readline("De cuant en cuant vols comptar: \n");
        
       
-        function calcula(){
-            $comptar = 1; $num =10;
+        function calcula($num, $comptar) {
+            $comptar = 1; 
+            $num =10;
             for($i = 0; $i <= $num; $i += $comptar)
             { 
                 
