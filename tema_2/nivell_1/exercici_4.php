@@ -1,15 +1,29 @@
 
 <?php 
    
-        $num = readline("Introdueix un número: \n");
+        $num = readline("Introdueix el número final: \n");
         $comptar = readline("De cuant en cuant vols comptar: \n");
-    
+       
+        function calcula2(){
+            $i = 1;
+            while ($i <= 10){
+                echo $i++;
+            }
+        }
         function calcula($comptar, $num){
             for($i = 0; $i <= $num; $i += $comptar){ 
                 
                 echo $i ." => ". $comptar. "\n";  }
         }
-        calcula($comptar, $num);
-    
+        function imprimir($comptar, $num){
+            if($num == null || $comptar == null){
+                calcula2();
+            }
+            else{
+                calcula($comptar, $num);
+            }
+        }
+        imprimir($comptar, $num);
+      
 ?>
 
