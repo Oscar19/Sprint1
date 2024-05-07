@@ -11,15 +11,30 @@
             }
         }
         function calcula($comptar, $num){
-            for($i = 0; $i <= $num; $i += $comptar){ 
+            for($i = 0; $i <= $num; $i += $comptar)
+            { 
                 
-                echo $i ." => ". $comptar. "\n";  }
+                echo $i ." => ". $comptar. "\n";  
+            }
+        }
+        function calcula3($comptar){
+            for($i = 0; $i <= 10; $i +=$comptar)
+            {
+                echo $i ." => ". $comptar. "\n";  
+            }
+            
         }
         function imprimir($comptar, $num){
-            if($num == null || $comptar == null){
+            if($num == null || $comptar == null)
+            {
                 calcula2();
             }
-            else{
+            elseif($num == null && $comptar != null)
+            {
+                calcula3($comptar);
+            }
+            else
+            {
                 calcula($comptar, $num);
             }
         }
