@@ -1,18 +1,8 @@
   <?php
 
-    /*$chocolate = 0;
-    $chicles = 0;
-    $caramelos = 0;*/
-
-  
-   $chocolate = readline("Cantidad de chocolate: ");
-    echo ($chocolate. "\n");
-    echo "Cantidad de chicles:";
-    $chicles = readline();
-
-    echo "Cantidad de caramelos:";
-    $caramelos = readline();
-
+    $chocolate = readline("Cantidad de chocolate: ");
+    $chicles = readline("Cantidad de chicles: ");
+    $caramelos = readline("Cantidad de chicles: ");
 
         function chocolate($cantidad){
             $precio = 1;

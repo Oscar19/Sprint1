@@ -26,5 +26,5 @@
             $this->area = ($this->alçada * $this->ample);
         }
     }
-
+    
     ?>

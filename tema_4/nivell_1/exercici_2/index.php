@@ -1,6 +1,6 @@
 <?php 
     require_once("classes/Shape.php");
-    
+   
     $triangulo = new triangulo();
     $triangulo->altura(10);
     $triangulo->base(10);
@@ -15,5 +15,7 @@
     $rectangulo->calcularArea();
     echo "El area del rectangulo es: ";
     $rectangulo->resultat();
+   
+
 
   
