@@ -8,7 +8,7 @@
  // usuario/directorio/clase
  
  class testGrausChecker extends TestCase {
-    //decirle que funcion voy a utilizar si no sale una alerta de riesgo
+    //decirle el método que voy a utilizar si no sale una alerta de riesgo
      /**
      * @covers oscanguera\exercici_1\grausChecker::CalcularNota
      */
@@ -51,7 +51,7 @@
      {
          $graus = new GrausChecker();
          $isSuspendido = $graus->CalcularNota(30);
-         
+
          $this->assertEquals("No está aprobado", $isSuspendido);
      }
  }
