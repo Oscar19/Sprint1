@@ -1,7 +1,7 @@
 <?php 
     require_once "animales.php";
     
-    class Gato extends animales
+    class Gatos extends animales
     {
     
         public function makeSound() :string

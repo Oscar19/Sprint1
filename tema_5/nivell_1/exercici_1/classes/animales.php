@@ -1,5 +1,5 @@
 <?php 
-    class animales{
+    abstract class animales{
         protected $nombre;
      
 

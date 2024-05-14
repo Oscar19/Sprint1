@@ -19,6 +19,6 @@ echo "Primeara manera \n";
     echo "Quinta manera\n";
     $range = range(1,10);
     foreach($range as $numero){
-        echo $numero;
+        echo $numero."\n";
     }
 ?>
