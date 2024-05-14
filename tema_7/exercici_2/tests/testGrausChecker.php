@@ -2,11 +2,13 @@
  declare(strict_types=1);
 
  namespace oscanguera\exercici_2\tests;
- 
+ //usuario/directorio/directorioTests
  use PHPUnit\Framework\TestCase;
  use oscanguera\exercici_2\grausChecker;
+ // usuario/directorio/clase
  
  class testGrausChecker extends TestCase {
+    //decirle que funcion voy a utilizar si no sale una alerta de riesgo
      /**
      * @covers oscanguera\exercici_1\grausChecker::CalcularNota
      */
@@ -26,6 +28,7 @@
          $graus = new GrausChecker();
          $isSegunda = $graus->CalcularNota(47);
          $notSegunda = $graus->CalcularNota(40);
+
          $this->assertEquals("Está en segunda división", $isSegunda);
          $this->assertNotEquals("Está en segunda división", $notSegunda);
      }
@@ -37,6 +40,7 @@
          $graus = new GrausChecker();
          $isTercera = $graus->CalcularNota(40);
          $notTercera = $graus->CalcularNota(30);
+
          $this->assertEquals("Está en tercera división", $isTercera);
          $this->assertNotEquals("Está en tercera división", $notTercera);
      }
@@ -47,11 +51,9 @@
      {
          $graus = new GrausChecker();
          $isSuspendido = $graus->CalcularNota(30);
+         
          $this->assertEquals("No está aprobado", $isSuspendido);
      }
  }
  
-  
-  
-    
-    ?>
+?>
