@@ -2,7 +2,7 @@
     require_once("Shape.php");
     class circunferencia extends Shape{
         protected $radio;
-        public function __construct($radio)  {
+        public function __construct(int $radio)  {
             $this->radio = $radio;
         }
         public function getRadio(){
