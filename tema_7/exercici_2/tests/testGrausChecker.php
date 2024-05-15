@@ -6,6 +6,9 @@
  use PHPUnit\Framework\TestCase;
  use oscanguera\exercici_2\grausChecker;
  // usuario/directorio/clase
+ /*
+ Poner atención a los nombres de clase, el descuidarlo da problemas...
+ */
  
  class testGrausChecker extends TestCase {
     //decirle el método que voy a utilizar si no sale una alerta de riesgo
