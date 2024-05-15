@@ -14,7 +14,6 @@
         public function getBase($ample){
             return $this->ample = $ample;
         }
-        abstract public function calcularArea() : int;
          
     }
     

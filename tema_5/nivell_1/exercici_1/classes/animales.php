@@ -10,7 +10,7 @@
         public function getNombre(){
             return $this->nombre;
         }
-
+        abstract public function makeSound() : string;
      
     }
 ?>
