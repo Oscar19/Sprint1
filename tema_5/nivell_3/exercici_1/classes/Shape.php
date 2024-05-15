@@ -1,20 +1,23 @@
 <?php 
-    abstract class Shape{
+   
+    abstract class Shape {
         protected $ample;
         protected $altura;
-
-        public function __construct(int $ample, int $altura){
+    
+        public function __construct(int $ample, int $altura) {
             $this->ample = $ample;
-            $this->altura = $altura;  
+            $this->altura = $altura;
         }
-       
-        public function getAltura($altura){
-            return $this->altura = $altura;
+    
+        public function getAltura() {
+            return $this->altura;
         }
-        public function getBase($ample){
-            return $this->ample = $ample;
+    
+        public function getBase() {
+            return $this->ample;
         }
-         
+    
+      //abstract public function calcularArea(): int;
     }
     
     
