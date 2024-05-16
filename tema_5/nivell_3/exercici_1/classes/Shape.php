@@ -17,7 +17,7 @@
             return $this->ample;
         }
     
-      //abstract public function calcularArea(): int;
+     // abstract public function calcularArea(): int;
     }
     
     

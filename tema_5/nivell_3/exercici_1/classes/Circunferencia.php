@@ -1,6 +1,7 @@
 <?php 
-    require_once("Shape.php");
-    class circunferencia extends Shape{
+    //require_once("Shape.php");
+    require_once("Circle.php");
+    class circunferencia implements Circle{
         protected $radio;
         public function __construct(int $radio)  {
             $this->radio = $radio;
