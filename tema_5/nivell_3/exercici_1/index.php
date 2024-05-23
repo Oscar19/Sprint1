@@ -23,7 +23,7 @@
                 $ample = readline("Indica la base del rectangulo: ");
                 $altura = readline("Indica la altura del rectangulo: ");
                 $rectangulo = new rectangulo($ample, $altura); 
-                echo "El area del rectangulo es: ". $rectangulo->calcularArea() ."\n";
+                echo "El area del rectangulo es: ". $rectangulo->calcularArea()."\n";
             break;
            case 3:
                 $radio = readline("Indica el radio de la circumferencia: ");

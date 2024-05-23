@@ -1,5 +1,4 @@
 <?php 
-    //require_once("Shape.php");
     require_once("Circle.php");
     class circunferencia implements Circle{
         protected $radio;
