@@ -18,6 +18,10 @@
         default:
             echo "Opción no válida";
     }
-
+    function altaEdificio(){
+        readline("Nombre del edicicio: ");
+        readline("Pantas del edificio: ");
+        readline("Superficie del edificio: ");
+    }
    
 ?> 
