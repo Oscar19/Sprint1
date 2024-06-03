@@ -6,7 +6,7 @@
 
         public function __construct($nombre,$edad,$sueldo) {
             $this->nombre = $nombre;
-            $this->edad= $edad;
+            $this->edad = $edad;
             $this->sueldo = $sueldo;
         }
         public function getNombre() {

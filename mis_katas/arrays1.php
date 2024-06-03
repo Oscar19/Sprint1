@@ -12,9 +12,11 @@
     $cuadrado[] = $elemento * $elemento;
     $cubo[] = $elemento*$elemento*$elemento;
    }
+   echo "Num cuadrado cubo \n";
    for ($i = 0; $i < 20; $i++) {
-    echo "<tr><td>".$num[$i]."</td>";
-    echo "<td>".$cuadrado[$i]."</td>";
-    echo "<td>".$cubo[$i]."</td></tr>";
+   
+    echo " ".$num[$i]." ";
+    echo " ".$cuadrado[$i]." ";
+    echo " ".$cubo[$i]." \n";
 }
 ?>
