@@ -6,4 +6,5 @@ clases en un programa en el que se instancien objetos y se les apliquen métodos
 las capacidades que proporciona HTML y CSS para incluir imágenes, sonidos, animaciones, etc.
 para representar acciones de objetos; por ejemplo, si el canario canta, el perro ladra, o el ave vuela.
 */
+
 ?>
