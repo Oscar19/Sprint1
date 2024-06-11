@@ -4,7 +4,7 @@
         Implementar los métodos abstractos.
         */
         require_once("Coche.php");
-        class CocheFamiliar extends Coche {
+        class CocheFamiliar extends Coche1 {
             private $numreroAsientos;
 
             public function __construct($marca, $modelo, $precio, $numreroAsientos) {

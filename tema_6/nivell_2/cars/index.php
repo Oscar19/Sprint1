@@ -5,5 +5,5 @@
 
     $car1->boost();
     
-  //print_r($car1);
+  print_r($car1);
 ?>

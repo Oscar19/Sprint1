@@ -21,7 +21,7 @@ Crear un sistema que gestione diferentes tipos de coches, permitiendo realizar l
     */
     
   
-    abstract class Coche{
+    abstract class Coche1{
         private $marca;
         private $modelo;
         private $precio;

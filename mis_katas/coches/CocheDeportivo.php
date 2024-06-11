@@ -5,7 +5,7 @@ Crear una clase CocheDeportivo que extienda Coche:
         Implementar los métodos abstractos.
 */
  require_once("Coche.php");
-    class CocheDeportivo extends Coche{
+    class CocheDeportivo extends Coche1{
         private $velocidadMaxima;
 
         public function __construct($marca, $modelo, $precio, $velocidadMaxima){

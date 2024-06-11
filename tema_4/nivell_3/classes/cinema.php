@@ -48,10 +48,10 @@ amb HTML+CSS que doni suport a la lògica.
             }
 
         }
-       public function __toString(Pelicula $pelicula)
+      /* public function __toString(Pelicula $pelicula)
        {
         return $this->getTitol();
-       }
+       }*/
 
     }
 ?>

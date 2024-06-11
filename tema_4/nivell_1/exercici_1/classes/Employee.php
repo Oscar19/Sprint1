@@ -1,7 +1,7 @@
 <?php 
     class Employee{
         public $nombre, $sueldo;
-        public function inicialize($nombre, $sueldo){
+        public function __construct($nombre, $sueldo){
             $this->nombre = $nombre;
             $this->sueldo = $sueldo;
         }
