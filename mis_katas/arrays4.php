@@ -13,6 +13,7 @@
    // calcular el producto con mas stock
    $maxStock = null;
    $valor = 0;
+   $maxprice = null;
    foreach ($inventario as $producto){
         if($producto["nombre"] == "Producto 1"){
             $producto["stock"]+= 20;
@@ -22,12 +23,19 @@
         }
         //calcular el valor total del inventario
         $valor = $producto["stock"] * $producto["precio"];
+        //mostrar producto con mayor precio
+        if($maxprice === null || $maxprice['precio'] < $producto['precio']){
+            $maxprice = $producto;
+        }
+        
+        echo "\n";
        // print_r ($producto);
-        echo $valor;
+      //  echo $valor;
 
     }
     echo "\n";
-    print_r ($maxStock);
+    //print_r ($maxStock);
+    print_r ($maxprice);
     
 
 ?>
