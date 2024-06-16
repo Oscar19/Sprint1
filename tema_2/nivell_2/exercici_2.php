@@ -2,7 +2,7 @@
 
     $chocolate = readline("Cantidad de chocolate: ");
     $chicles = readline("Cantidad de chicles: ");
-    $caramelos = readline("Cantidad de chicles: ");
+    $caramelos = readline("Cantidad de caramelos: ");
 
         function chocolate($cantidad){
             $precio = 1;
@@ -31,9 +31,9 @@
             return $total;
         }
 
-        echo "<br><br>Chocolate: " . $chocolate . " x " . $precio_chocolate . "€<br>";
-        echo "Chicles: " . $chicles . " x " . $precio_chicles . "€<br>";
-        echo "Caramelos: " . $caramelos . " x " . $precio_caramelos . "€<br>";
-        echo "Total: " . calcular_total($chocolate, $chicles, $caramelos) . "€<br>";
+        echo "Chocolate: " . $chocolate . " x " . $precio_chocolate . "€\n";
+        echo "Chicles: " . $chicles . " x " . $precio_chicles . "€\n";
+        echo "Caramelos: " . $caramelos . " x " . $precio_caramelos . "€\n";
+        echo "Total: " . calcular_total($chocolate, $chicles, $caramelos) . "€\n";
     
     ?>

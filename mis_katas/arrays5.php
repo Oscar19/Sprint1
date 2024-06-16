@@ -36,15 +36,29 @@
     
 
 //Actualizar la calificación de una materia: Actualiza la calificación de "historia" de "Juan" a 95.
+    $cienciasNota = null;
     foreach ($estudiantes as $estudiante){
         if($estudiante["nombre"] == "Juan"){
-            $estudiante["historia"] +20;
+            $estudiante["calificaciones"]["historia"] +20;
            // print_r ($estudiante);
         }
         //calcular media de cada estudiante
+        $calificaciones = $estudiante["calificaciones"];
+        $count = count($calificaciones);
+        $notas = array_sum($calificaciones);
+        $media = $notas / $count."\n";
+       echo $estudiante["nombre"]." ha sacado de media: ".$media."\n";
+
+        if ($cienciasNota === null || $cienciasNota["calificaciones"]["ciencias"] < $calificaciones["ciencias"]){
+            $cienciasNota = $estudiante;
+        }
+       
+
+
         
 
     }
+    echo $cienciasNota["nombre"]. " ha sacado la mejor nota de ciencias, con un: ". $cienciasNota["calificaciones"]["ciencias"]."\n";
 
 //Eliminar un estudiante: Elimina a "Carlos" del array de estudiantes.
 

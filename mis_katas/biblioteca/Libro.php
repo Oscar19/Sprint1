@@ -12,7 +12,7 @@
                 $this->numeroPaginas = $numeroPaginas;
 
             }
-            public function getNumero()
+            public function getNumeroPaginas()
             {
                 return $this->numeroPaginas;
             }

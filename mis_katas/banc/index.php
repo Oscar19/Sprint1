@@ -1,0 +1,44 @@
+<?php 
+    /* Donat el diagrama de classes de la imatge.
+
+Programa una aplicació que tingui programades totes les opcions del següent menú:
+
+    0.- Sortir de l'aplicació.
+    1.- Crear client/a.
+    2.- Eliminar client/a.
+    3.- Crear compta d'un client/a.
+    4.- Ingressar euros en un compte d'un client/a.
+    5.- Retirar euros en un compte d'un client/a.
+
+A tenir en compte:
+- El saldo inicial de totes les comptes, ha de ser 0 €.
+- En crear un client/a, no haurà de tenir cap compte “associada”.
+- El diagrama UML mostrà les propietats i mètodes mínims que han de tenir les classes, 
+però pots crear-ne més si és necessari. */
+
+    echo "******* Menu ********";
+
+    echo "1.- Crear client/a.";
+    echo "2.- Eliminar client/a";
+    echo "3.- Crear compta d'un client/a.";
+    echo "4.- Ingressar euros en un compte d'un client/a.";
+    echo "5.- Retirar euros en un compte d'un client/a.";
+
+    $opcio = readline("Que vols fer: ");
+    do{
+        switch($opcio){
+            case 1 : 
+            break;
+            case 2 : 
+            break;
+            case 3 : 
+            break;
+            case 4 : 
+            break;
+            case 5 : 
+            break;
+        }
+    }while($opcio != 0)
+    
+
+?>

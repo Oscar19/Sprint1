@@ -47,7 +47,3 @@ Subclases de Pokemon para tipos específicos (opcional):
 
     }
 ?>
-hola, me llamo oscar calvo anguera, como venia diciendo, estooy estudiando poo , y por ahora no me sale mal, pero hay que mejorarlo.
-
-tengo que practicar mucho más, pero por ahora no va mal.
-por ahora arrays y todo tipo de objetos
