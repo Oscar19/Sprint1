@@ -3,7 +3,7 @@
   $entrega1 = new Entrega("oscar", Sprint::php, 2, "12/05/2024");
   $entrega2 = new Entrega("sergio", Sprint::bbdd, 6, "12/04/2024");
   $entrega3 = new Entrega("xavi", Sprint::laravelMvc, 2, "12/06/2024");
-  $entrega4 = new Entrega("jose", Sprint::bbdd, 4, "12/04/2024");
+  $entrega4 = new Entrega("jose", Sprint::patrones, 4, "12/04/2024");
 
   $entregas = array($entrega1, $entrega2, $entrega3, $entrega4);
 
