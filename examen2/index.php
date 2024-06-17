@@ -17,7 +17,7 @@
         if($maxAlumno === null || $entrega->cantidadCorregir() > $maxAlumno->cantidadCorregir()){
             $maxAlumno = $entrega;
         }
-        echo "Entregas a corregir por sprint: ". $entrega->getSprint(). " ". $entrega->cantidadCorregir(). "\n";
+        echo "Entregas a corregir de: ". $entrega->getSprint(). " ". $entrega->cantidadCorregir(). "\n";
         echo "\n";
     }
    
