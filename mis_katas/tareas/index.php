@@ -20,4 +20,3 @@ echo "\nDespués de cambiar el estado:\n";
 echo $tarea1;
 echo $tarea2;
 ?>
-

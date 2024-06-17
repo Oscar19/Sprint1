@@ -17,9 +17,12 @@ Crea un sistema de gestión de empleados que permita realizar las siguientes ope
 */
 require_once("Empleado.php");
 
-//$empleado1 = new Empleado("Oscar", 2500);
+$empleado1 = new Empleado("Oscar", 2500);
+$empleado1->aumentarSalario(20);
 
-
+/*echo "Nombre : ". $empleado1->getNombre(). "\n";
+echo "Salario mensual: $" . $empleado1->getSalario() . "\n";
+echo "Salario anual: $" . ($empleado1->getSalario() * 12) . "\n";*/
 // Crear un objeto Gerente
 $gerente1 = new Gerente("Jaime", 3500, "Ventas");
 $gerente1->aumentarSalario(10); // Aumentar el salario en un 10%

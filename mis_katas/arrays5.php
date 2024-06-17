@@ -52,11 +52,6 @@
         if ($cienciasNota === null || $cienciasNota["calificaciones"]["ciencias"] < $calificaciones["ciencias"]){
             $cienciasNota = $estudiante;
         }
-       
-
-
-        
-
     }
     echo $cienciasNota["nombre"]. " ha sacado la mejor nota de ciencias, con un: ". $cienciasNota["calificaciones"]["ciencias"]."\n";
 
