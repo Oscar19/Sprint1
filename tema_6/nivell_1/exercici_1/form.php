@@ -8,16 +8,9 @@
     $_SESSION['apellido'] = $apellido;
     echo "Sesión : " . $_SESSION['nombre'] . " ".$_SESSION['apellido'] ;
             
-            
 
-       
-
-    echo "<h2>Tus datos</h2>";
+    echo "Tus datos";
     echo "Nombre de usuario: ". $nombre ."\n";
     echo "Apellido: ". $apellido ."\n";
     echo "lenguaje: ". $lenguaje ."\n";
-
-        ?>
-  
-   
-
+ ?>
